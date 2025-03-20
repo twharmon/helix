@@ -1,0 +1,19 @@
+[[language]]
+name = "go"
+formatter = { command = "goimports" }
+roots = ["go.mod"]
+diagnostic-severity = "hint"
+
+[language-server.deno-language-server]
+command = "deno"
+args = ["lsp"]
+required-root-patterns = ["deno.json"]
+
+[language-server.typescript-language-server]
+required-root-patterns = ["package.json"]
+
+[[language]]
+name = "typescript"
+file-types = ["ts", "tsx"]
+language-servers = ["deno-language-server", "typescript-language-server"]
+auto-format = true
