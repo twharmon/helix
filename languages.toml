@@ -3,6 +3,7 @@ name = "go"
 formatter = { command = "goimports" }
 roots = ["go.mod"]
 diagnostic-severity = "hint"
+language-servers = ["gopls"]
 
 [language-server.deno-language-server]
 command = "deno"
