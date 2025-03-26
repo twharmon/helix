@@ -5,6 +5,11 @@ roots = ["go.mod"]
 diagnostic-severity = "hint"
 language-servers = ["gopls"]
 
+[[language]]
+name = "rust"
+auto-format = true
+formatter = { command = "rustfmt" }
+
 [language-server.deno-language-server]
 command = "deno"
 args = ["lsp"]
