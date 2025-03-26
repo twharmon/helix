@@ -34,3 +34,6 @@ L = "extend_to_line_end"
 H = "extend_to_line_start"
 "A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.insert]
+j = { k = "normal_mode" }
