@@ -27,9 +27,9 @@ mode.select = "SELECT"
 [editor.file-picker]
 hidden = false
 
-[editor.inline-diagnostics]
-cursor-line = "hint"
-other-lines = "warning"
+# [editor.inline-diagnostics]
+# cursor-line = "hint"
+# other-lines = "warning"
 
 [keys.normal]
 "space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others"}
@@ -46,6 +46,3 @@ L = "extend_to_line_end"
 H = "extend_to_line_start"
 "A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
-
-[keys.insert]
-j = { k = "normal_mode" }
