@@ -10,16 +10,38 @@ name = "rust"
 auto-format = true
 formatter = { command = "rustfmt" }
 
-[language-server.deno-language-server]
-command = "deno"
-args = ["lsp"]
-required-root-patterns = ["deno.json"]
-
-[language-server.typescript-language-server]
-required-root-patterns = ["package.json"]
-
 [[language]]
 name = "typescript"
-file-types = ["ts", "tsx"]
-language-servers = ["deno-language-server", "typescript-language-server"]
+language-servers = ["typescript-language-server"]
+file-types = ["ts"]
 auto-format = true
+
+[[language]]
+name = "svelte"
+language-servers = ["svelteserver"]
+roots = ["svelte.config.js"]
+auto-format = true
+
+[[language]]
+name = "vue"
+language-servers = ["vuels", "typescript-language-server"]
+auto-format = true
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/usr/local/lib/node_modules/@vue/typescript-plugin"
+languages = ["vue"]
+
+[[language-server.svelteserver.config.plugins]]
+name = "typescript-svelte-plugin"
+location = "/usr/local/lib/node_modules/typescript-svelte-plugin"
+languages = ["svelte"]
+
+[language-server]
+vuels = { command = "vue-language-server", args = ["--stdio"] }
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+

@@ -18,21 +18,18 @@ smart-case = false
 
 [editor.statusline]
 left = ["mode", "spacer", "version-control", "workspace-diagnostics"]
-center = ["file-name", "file-modification-indicator"]
+center = ["file-name", "file-modification-indicator", "file-type"]
 right = ["diagnostics", "selections", "primary-selection-length", "position"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [editor.file-picker]
-hidden = false
-
-# [editor.inline-diagnostics]
-# cursor-line = "hint"
-# other-lines = "warning"
+git-ignore = false
+ignore = false
 
 [keys.normal]
-"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others"}
+"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory"}
 "'" = "repeat_last_motion"
 L = "extend_to_line_end"
 H = "extend_to_line_start"
@@ -40,7 +37,7 @@ H = "extend_to_line_start"
 "A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
 [keys.select]
-"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others"}
+"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory"}
 "'" = "repeat_last_motion"
 L = "extend_to_line_end"
 H = "extend_to_line_start"
