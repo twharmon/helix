@@ -17,6 +17,12 @@ file-types = ["ts"]
 auto-format = true
 
 [[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+file-types = ["js"]
+auto-format = true
+
+[[language]]
 name = "svelte"
 language-servers = ["svelteserver"]
 roots = ["svelte.config.js"]
