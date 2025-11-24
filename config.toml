@@ -8,7 +8,6 @@ cursorline = true
 idle-timeout = 50
 true-color=true
 completion-trigger-len = 1
-# end-of-line-diagnostics = "hint" 
 
 [editor.inline-diagnostics]
 cursor-line = "error" 
