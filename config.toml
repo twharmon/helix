@@ -1,6 +1,7 @@
 theme = "catppuccin_macchiato"
 
 [editor]
+auto-info = false
 line-number = "relative"
 gutters = ["spacer", "diagnostics", "spacer", "diff", "line-numbers", "spacer"]
 color-modes = true
