@@ -7,16 +7,11 @@ gutters = ["spacer", "diagnostics", "spacer", "diff", "line-numbers", "spacer"]
 color-modes = true
 cursorline = true
 idle-timeout = 50
-true-color=true
 completion-trigger-len = 1
 
 [editor.inline-diagnostics]
 cursor-line = "error" 
 other-lines = "disable"
-
-[editor.cursor-shape]
-insert = "bar"
-normal = "block"
 
 [editor.search]
 smart-case = false
@@ -28,10 +23,6 @@ right = ["diagnostics", "selections", "primary-selection-length", "position"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
-
-[editor.file-picker]
-git-ignore = false
-ignore = false
 
 [keys.normal]
 "space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory"}

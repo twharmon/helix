@@ -1,9 +1,10 @@
 [[language]]
 name = "go"
+language-servers = ["gopls"]
 formatter = { command = "goimports" }
 roots = ["go.mod"]
 diagnostic-severity = "hint"
-language-servers = ["gopls"]
+auto-format = true
 
 [[language]]
 name = "rust"
@@ -27,24 +28,6 @@ name = "svelte"
 language-servers = ["svelteserver"]
 roots = ["svelte.config.js"]
 auto-format = true
-
-[[language]]
-name = "vue"
-language-servers = ["vuels", "typescript-language-server"]
-auto-format = true
-
-[[language-server.typescript-language-server.config.plugins]]
-name = "@vue/typescript-plugin"
-location = "/usr/local/lib/node_modules/@vue/typescript-plugin"
-languages = ["vue"]
-
-[[language-server.svelteserver.config.plugins]]
-name = "typescript-svelte-plugin"
-location = "/usr/local/lib/node_modules/typescript-svelte-plugin"
-languages = ["svelte"]
-
-[language-server]
-vuels = { command = "vue-language-server", args = ["--stdio"] }
 
 [[language]]
 name = "tsx"
