@@ -34,3 +34,6 @@ name = "tsx"
 language-servers = ["typescript-language-server"]
 auto-format = true
 
+[[language]]
+name = "markdown"
+soft-wrap.enable = true
