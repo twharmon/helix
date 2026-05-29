@@ -25,7 +25,7 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [keys.normal]
-"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory"}
+"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory", l = ":reload-all" }
 "'" = "repeat_last_motion"
 L = "extend_to_line_end"
 H = "extend_to_line_start"
@@ -33,7 +33,7 @@ H = "extend_to_line_start"
 "A-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
 [keys.select]
-"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory"}
+"space" = { q = ":q", w = ":w", c = ":buffer-close", o = ":buffer-close-others", f = "file_picker_in_current_directory", l = ":reload-all" }
 "'" = "repeat_last_motion"
 L = "extend_to_line_end"
 H = "extend_to_line_start"
